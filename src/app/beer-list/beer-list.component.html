@@ -1,0 +1,9 @@
+<div *ngFor="let beer of beersListInComponent">
+  <h1>{{ beer.name }}</h1>
+  <img
+    [routerLink]="['/beer', beer.id]"
+    [src]="beer.image_url"
+    alt="l'image de la bière"
+  />
+  <!-- <img src="{{beer.image_url}}" alt="l'image de la bière">  faire une petite recherche pour expliquer-->
+</div>
